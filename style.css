@@ -228,7 +228,7 @@ body.modal-open {
 }
 /* INTRO PAGE (SIGN-UP PAGE) BACKGROUND */
 body {
-    background: url('images/school.jpg') no-repeat center center;
+    background: url('Images/school.jpg') no-repeat center center;
     background-size: cover; /* Ensures it covers the entire screen dynamically */
     background-attachment: fixed; /* Keeps it fixed during scrolling */
     position: relative;
@@ -248,5 +248,5 @@ body::before {
 /* HISTORY MODAL BACKGROUND */
 #aboutModal .modal-content {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('images/statue.jpg') no-repeat center center/cover;
+                url('Images/statue.jpg') no-repeat center center/cover;
 }
