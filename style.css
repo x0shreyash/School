@@ -1,0 +1,252 @@
+/* RESET & UNIVERSAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+/* BACKGROUND - AMOLED BLACK */
+body {
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* PAGE LOADING EFFECT */
+body {
+    animation: fadeIn 0.9s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* NAVBAR - CYBERPUNK STYLE */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
+    border-bottom: 3px solid #ff0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, #ff9900, #ff8800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 170, 0, 0.636);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff9100;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+    text-shadow: 0 0 15px #ff4500;
+}
+
+/* FORM CONTAINER - NEXT LEVEL DESIGN */
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0 30px rgb(25, 0, 0);
+    margin-top: 120px;
+    border: 2px solid rgb(255, 0, 0);
+    animation: slideIn 0.8s ease-in-out;
+}
+
+/* FORM FADE-IN EFFECT */
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* FORM TITLE */
+.form-container h2 {
+    color: #ff8c00;
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+/* INPUT FIELDS - GLASS EFFECT */
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.89);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    outline: none;
+    backdrop-filter: blur(20px);
+    box-shadow: inset 0 0 10px rgba(144, 0, 255, 0.255);
+    transition: 0.3s;
+}
+
+/* INPUT HOVER & FOCUS */
+.form-container input:focus,
+.form-container select:focus {
+    border: 2px solid #170074;
+    box-shadow: 0 0 15px rgba(102, 0, 255, 0.6);
+}
+
+/* BUTTON - MAXIMUM LEVEL */
+.form-container button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #ff0000, #fe0000);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.997);
+}
+
+/* BUTTON HOVER */
+.form-container button:hover {
+    background: linear-gradient(90deg, #6600fe, #ff0000);
+    color: white;
+    box-shadow: 0 0 25px #000000d3;
+}
+
+/* MODAL BACKGROUND */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Darkens background */
+    backdrop-filter: blur(5px); /* Blurred effect */
+    justify-content: center;
+    align-items: center;
+    z-index: 200; /* Ensures it's above everything */
+}
+
+/* MODAL CONTENT */
+.modal-content {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    width: 70%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(97, 0, 0, 0.745);
+    text-align: left;
+    color: white;
+    position: relative;
+    z-index: 250; /* Ensures content is above background */
+}
+
+/* SCROLLBAR FOR MODAL CONTENT */
+.modal-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #00FFFF;
+    border-radius: 5px;
+}
+
+.modal-content h2 {
+    text-align: center;
+    color: #ff4d00;
+    margin-bottom: 10px;
+}
+
+/* CLOSE BUTTON */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #ff0000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* DIM BACKGROUND WHEN MODAL OPENS */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* ABOUT MODAL OPENING */
+.modal:target {
+    display: flex;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        max-height: 85vh;
+    }
+}
+/* INTRO PAGE (SIGN-UP PAGE) BACKGROUND */
+body {
+    background: url('images/school.jpg') no-repeat center center;
+    background-size: cover; /* Ensures it covers the entire screen dynamically */
+    background-attachment: fixed; /* Keeps it fixed during scrolling */
+    position: relative;
+}
+
+/* Dark Overlay Effect */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust for dim effect */
+    z-index: -1; /* Keeps it behind the content */
+}
+/* HISTORY MODAL BACKGROUND */
+#aboutModal .modal-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('images/statue.jpg') no-repeat center center/cover;
+}

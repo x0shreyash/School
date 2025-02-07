@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Header with School Name and Navigation -->
+<header>
+    <h1 class="school-name">St. Acts</h1>
+    <nav>
+        <ul>
+            <li><a href="mailto:st.acts@yahoo.com">st.acts@yahoo.com</a></li>
+            <li><a href="#aboutModal" class="about-button">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- About Modal -->
+<div id="aboutModal" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Brief History of St. Augustine</h2>
+        <p>
+            St. Augustine Catholic School started its humble beginning in the year 1998. It was a response to the call of the parents as to where they would send their children after their pre-school education at Mater Carmeli School - a kindergarten school established by the Carmelite Sisters in the year 1972. The same question was also raised by many parishioners on their need for Catholic education in Dumangas, for by this time, they were sending their children to St. Paul School in Barotac Nuevo or the Sacred Heart School in Zarraga.
+        </p>
+        <p>
+            Monsignor Ramon A. Pet, the parish priest then, studied the possibility of putting up a school. Together with a group of parents, they formed an association known up to this day as St. Augustine Dumangas Catholic Community Educational Association (SADCCEA). Through their voluntary and committed services, the Dumangas Catholic School Inc. was organized and registered with the Security and Exchange Commission (SEC). Their primary purpose was: "A school that will serve as a venue to educate and form young children and to offer a sound and complete Catholic education. This will promote intellectual and moral development and produce graduates of high moral values, honest in their way of life, and committed to work for the common good."
+        </p>
+        <p>
+            On June 8, 1998, Msgr. Jose M. Gamboa officiated the Thanksgiving Mass and blessed the two-classroom building. This marked the beginning of St. Augustine Catholic School - a Parochial School.
+        </p>
+        <p>
+            In his desire to expand the school, Msgr. Pet initially started the High School Department by opening the first year of high school. This was cut short because he was transferred to Barotac Nuevo as Parish Priest. On November 17, 2002, Rev. Fr. Rolando S. Suplido assumed the role of Parish Priest of Dumangas and took leadership of the school. In his desire to cater to the needs of poor but deserving students, a complete high school was then offered. The school became a qualified recipient of the Fund for Assistance to Private Education (FAPE) through the Government Assistance to Students and Teachers for Private Education (GASTPE).
+        </p>
+        <p>
+            Since then, enrollment increased significantly, prompting the school, with the help of parents, to build additional structures made of light materials (nipa and bamboo), which are still in use today. Rev. Fr. Rolando S. Suplido ended his term as the School Director in November 2008, leaving behind significant contributions for the school's improvement.
+        </p>
+        <p>
+            In the same year, Rev. Fr. John C. Taclain assumed office as the new school director. During his term, he worked for the improvement of school operations guided by the Manual of Regulations for Parochial Schools (MORPS). He institutionalized the Financial Program of the School and the standardization of salaries. His desire to improve the school's physical aspects was initiated but did not progress due to limited funds. Rev. Fr. John C. Taclain resigned from his post in May 2011 to prioritize his priestly ministry as Parish Priest of St. Augustine.
+        </p>
+        <p>
+            In due time, the school was put under the supervision of Fr. Ely Rafael D. Fuentes, the school director of St. Julian Academy and Superintendent of the Parochial Schools of Jaro, until the formal appointment of Rev. Fr. Jesus Glofel H. Mana-ay.
+        </p>
+        <p>
+            On November 1, 2011, Rev. Fr. Jesus Glofel H. Mana-ay assumed office as a full-time School Director.
+        </p>
+    </div>
+</div>
+    <div class="form-container">
+        <form action="thankyou.html" method="get">
+            <h2>Registration</h2>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" placeholder="Grade" required>
+            
+            <label for="status">Student Status:</label>
+            <select id="status" name="status" required>
+                <option value="">Select Status</option>
+                <option value="new">New Student</option>
+                <option value="old">Old Student</option>
+            </select>
+            
+            <label for="lrn">LRN:</label>
+            <input type="text" id="lrn" name="lrn" placeholder="LRN" required>
+            
+            <label for="birthplace">Place of Birth:</label>
+            <input type="text" id="birthplace" name="birthplace" placeholder="Place of Birth" required>
+            
+            <label for="religion">Religion:</label>
+            <input type="text" id="religion" name="religion" placeholder="Religion" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Age" required>
+            
+            <label for="lastschool">Last School Attended:</label>
+            <input type="text" id="lastschool" name="lastschool" placeholder="Last School Attended" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Address" required>
+            
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" placeholder="Contact Number" required>
+            
+            <label for="facebook">Facebook Account:</label>
+            <input type="url" id="facebook" name="facebook" placeholder="Facebook Profile URL" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
